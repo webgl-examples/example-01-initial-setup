@@ -116,7 +116,7 @@ export class Main {
     // start drawing the square.
     mat4.translate(modelViewMatrix,     // destination matrix
                    modelViewMatrix,     // matrix to translate
-                   [-0.0, 0.0, -6.0]);  // amount to translate
+                   [0.0, 0.0, -8.0]);  // amount to translate
   
     // Tell WebGL how to pull out the positions from the position
     // buffer into the vertexPosition attribute.
@@ -137,7 +137,6 @@ export class Main {
     GL.enableVertexAttribArray(
         programInfo.attribLocations.vertexPosition);
     
-  
     // Tell WebGL to use our program when drawing
     GL.useProgram(programInfo.program);
   
